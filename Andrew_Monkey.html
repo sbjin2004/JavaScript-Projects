@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>p5 example</title>
+  <script language="javascript" type="text/javascript">
+
+/* Created by Andrew Jin, 2018
+*/   
+      var slider;
+      
+      function setup(){ //background
+          createCanvas(1000, 500);
+          background(255, 0, 0);
+
+      }
+      
+      function draw(){
+         //var val = slider.value();
+          background(105, mouseY/2, 40);
+          
+          fill(0,0,0);
+          ellipse(mouseX, mouseY, 205, 205); //personal made stroke
+         
+          fill(0,0,0);
+          ellipse(mouseX+110, mouseY-20, 105, 105);
+          fill(166,77,16);
+          ellipse(mouseX+110, mouseY-20, 100, 100); //monkey left ear skin
+          fill(172,91,18);
+          ellipse(mouseX+110, mouseY-20, 50, 50); //monkey inside ear left
+          
+          fill(0,0,0);
+          ellipse(mouseX-110, mouseY-20, 105, 105); 
+          fill(166,77,16);
+          ellipse(mouseX-110, mouseY-20, 100, 100); //monkey right ear skin
+          fill(172,91,18);
+          ellipse(mouseX-110, mouseY-20, 50, 50); //monkey inside ear right
+          
+          fill(166,77,16);
+          ellipse(mouseX, mouseY, 200, 200); //monkey skin color
+          fill(172,91,18);
+          ellipse(mouseX+25, mouseY-25, 100, 100); //monkey left colored side
+          fill(172,91,18);
+          ellipse(mouseX-25, mouseY-25, 100, 100); //monkey right colored side
+          fill(172,91,18);
+          ellipse(mouseX, mouseY+25, 140, 140); //monkey mouth colored side
+          
+          fill(0,0,0);
+          ellipse(mouseX+25, mouseY-25, 35, 35); //monkey left eye
+          fill(0,0,0);
+          ellipse(mouseX-25, mouseY-25, 35, 35); //monkey right eye
+          fill(0,0,0);
+          ellipse(mouseX, mouseY, 15, 15); //monkey nose
+          noStroke();
+          
+          if(mouseIsPressed){
+              drawAngry();
+              
+          }
+          
+      }
+  
+  
+      function drawAngry(){
+      
+      /*From here on out it's the angry symbol I made. Left click to show.*/
+      
+        fill('red');
+          fill(255,10,24);
+          rect(mouseX+15,mouseY-80, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+20,mouseY-80, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+20,mouseY-85, 5, 5);
+          
+          fill(255,10,24);
+          rect(mouseX+30,mouseY-80, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+35,mouseY-80, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+30,mouseY-85, 5, 5);
+          
+          fill(255,10,24);
+          rect(mouseX+15,mouseY-70, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+20,mouseY-70, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+20,mouseY-65, 5, 5);
+          
+          fill(255,10,24);
+          rect(mouseX+30,mouseY-70, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+35,mouseY-70, 5, 5);
+          fill(255,10,24);
+          rect(mouseX+30,mouseY-65, 5, 5);
+      
+      }
+  
+      
+    </script>
+</head>
+
+  <script language="javascript" type="text/javascript">
+    
+    setTimeout(function(){
+        p5.instance = new p5();
+    } , 0);
+
+  </script>
+
+</body>
+</html>
